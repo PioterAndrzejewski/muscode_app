@@ -1,3 +1,11 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/muscode_app/' : '/'
+  devServer: {
+    proxy: {
+      '^/users': {
+        target: 'http://localhost:3000/',
+        ws: true,
+        changeOrigin: true
+      }
+    }
+  }
 }

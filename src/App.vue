@@ -38,7 +38,7 @@ const productsInit = [
     price: 1000,
     priceSale: 649,
     currencyId: 0,
-    img: '/img/img1.png'
+    img: './assets/img1.png'
   },
   {
     id: 1,
@@ -46,7 +46,7 @@ const productsInit = [
     price: 800,
     priceSale: 600,
     currencyId: 0,
-    img: '/img/img2.png'
+    img: './assets/img2.png'
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const productsInit = [
     price: 8000,
     priceSale: null,
     currencyId: 1,
-    img: '/img/img3.png'
+    img: './assets/img3.png'
   },
 ];
 import MainHeader from './components/MainHeader.vue';
