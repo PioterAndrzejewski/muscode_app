@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1 class="green">{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -19,5 +19,6 @@ defineProps({
   font-weight: 600;
   font-size: 2.2em;
   text-align: center;
+  color: var(--color-heading)
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <article class="container">
+  <article class="container product-card">
     <h2 class="heading">{{ product.name }}</h2>
-    <img :src="product.img" class="product-image" />
+    <img :src="product.img" class="product-image" alt="product.name" />
     <div class="price-main">{{ productPrice }} {{ showCurrency(product.currencyId) }}</div>
     <div v-if="productPriceBefore" class="price-secondary">{{ productPriceBefore }} {{ showCurrency(product.currencyId) }}
     </div>
@@ -34,15 +34,21 @@ export default {
 </script>
 
 <style scoped>
+.product-card {
+  cursor: pointer;
+}
+
 .heading {
   margin-bottom: 15px;
   font-weight: 600;
   font-size: 1rem;
+  color: var(--color-heading)
 }
 
 .product-image {
   display: block;
   height: 200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -71,6 +77,32 @@ export default {
   color: var(--color-text-discount);
   background-color: var(--color-background-discount-bar);
   transform: rotate(45deg);
+}
+
+@media (max-width: 1200px) {
+  .product-image {
+    max-height: 80%;
+    width: auto;
+  }
+
+  .discount-bar {
+    top: 15%;
+    right: -8%;
+  }
+}
+
+@media (max-width: 594px) {
+  .discount-bar {
+    top: 15%;
+    right: -15%;
+  }
+}
+
+@media (max-width: 380px) {
+  .discount-bar {
+    top: 10%;
+    right: -24%;
+  }
 }
 </style>
 

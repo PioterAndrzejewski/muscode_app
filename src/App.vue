@@ -119,11 +119,13 @@ export default {
   --color-background-backdrop: #000000d0;
   --color-border: #b2b2b2;
   --color-border-container: #b2b2b296;
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border-modal: #333c85;
+  --color-border-button: #000;
 
   --color-heading: #333;
   --color-text: #384a5c;
   --color-text-discount: #fff;
+  --color-button-white: #fff;
   --color-active: #862583;
 
   --font-family: Roboto, sans-serif;
@@ -166,12 +168,17 @@ body {
   gap: 15px;
 }
 
-.second-element {
-  grid-column-start: 2;
-  grid-column-end: -1;
-}
-
 .height {
   min-height: 200px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 0 auto 60px auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 </style>

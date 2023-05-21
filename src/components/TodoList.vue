@@ -2,16 +2,17 @@
   <section class="container">
     <div class="heading">
       <h2>Lista todo</h2>
-      <p>Wykonane: <span>{{ finishedTotal }}</span></p>
+      <p>Wykonane: {{ finishedTotal }}</p>
     </div>
 
     <ul class="todo-list">
-      <li v-for="todo in todoList" :key="todo.id" class="todo-item">
-        <div class="circle" :class="{ 'circle--finished': todo.finished }" @click="setFinished(todo.id)"></div>
+      <li v-for="todo in todoList" :key="todo.id" class="todo-item" @click="removeTodo(todo.id)">
+        <div class="circle" :class="{ 'circle--finished': todo.finished }" @click.stop="setFinished(todo.id)"></div>
         <p @click="removeTodo(todo.id)">{{ todo.description }}</p>
       </li>
     </ul>
-    <input type="text" placeholder="Dodaj nowy element checklisty" v-model="todoInput" v-on:keyup.enter="addTodo">
+    <span><input class="todo-input" type="text" placeholder="+ Dodaj nowy element checklisty" v-model="todoInput"
+        v-on:keyup.enter="addTodo"></span>
   </section>
 </template>
 
@@ -80,6 +81,14 @@ export default {
 .heading {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 28px;
+  color: var(--color-heading)
+}
+
+.heading h2,
+.heading p {
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .todo-list {
@@ -88,17 +97,45 @@ export default {
 
 .todo-item {
   display: flex;
+  padding: 10px;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.todo-item:hover {
+  border-bottom: 1px solid var(--color-active);
 }
 
 .circle {
-  width: 15px;
-  height: 15px;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
 }
 
 .circle--finished {
   background-color: var(--color-active)
+}
+
+.todo-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.todo-input:focus,
+.todo-input:hover {
+  outline: none;
+  border-bottom: 1px solid var(--color-active);
+}
+
+.todo-input:before {
+  display: inline-block;
+  color: red;
+  content: 'Pseudo Element Text ';
 }
 </style>
 
