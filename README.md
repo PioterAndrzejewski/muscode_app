@@ -38,24 +38,24 @@ Now you're ready to test the app in your browser on localhost:3000
 
 The app consists of several elements:
 
-- [ ] Todolist - simple and obvious todo-list.
+- [ ] Todolist - simple and obvious todo-list. <br>
 ![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/208b0e15-9659-498e-97de-0fbb6f4720b6)
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/4858940d-afab-4896-99ed-72f3deeec5f8)
 
-- [ ] Products table - displaying info about products,
+- [ ] Products table - displaying info about products, <br>
 
 ![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/d581886d-4f1d-4c35-80b5-9d3726ac74cc)
 
-
-- [ ] Product cards - every product in data is presented as card,
+- [ ] Product cards - every product in data is presented as card, <br>
 
 ![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/24759d91-7daa-4c23-bfae-cd9510434361)
 
 
-- [ ] Modal - to edit product data,
+- [ ] Modal - to edit product data, <br>
 
 ![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/7d61784d-3b60-4ea4-aa9e-885799c29de7)
 
- ## To-do
+ ## Future development
 The application was a pre-recruitment task and there are no plans of future development. 
     
 ## Sources
