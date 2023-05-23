@@ -1,35 +1,63 @@
-# muscode_app
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+<!-- PROJECT LOGO -->
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/529eba8d-a5b2-4625-9c74-8843d6c0ddb7)
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<br />
+<div align="center">Check demo:
+  <a href="[https://github.com/PioterAndrzejewski/products_getter/](https://pioterandrzejewski.github.io/muscode_app/)">
+  </a>
 
-## Project Setup
+<h3 align="center">Muscode app</h3>
 
-```sh
-npm install
-```
+  <p align="center">
+   A single page application created in Vue.js.
+    <br />
+    <br />
+  </p>
+</div>
 
-### Compile and Hot-Reload for Development
+## Getting started
 
-```sh
-npm run dev
-```
+After cloning the repository and installing dependencies run the app using npm run dev
 
-### Compile and Minify for Production
+  ```sh
+  $ git clone https://github.com/PioterAndrzejewski/products_getter.git
+  $ cd muscode_app
+  $ npm i
+  $ npm run dev
+  ```
+Now you're ready to test the app in your browser on localhost:3000
 
-```sh
-npm run build
-```
+### Built With
 
-### Lint with [ESLint](https://eslint.org/)
+- Vue.js,
 
-```sh
-npm run lint
-```
+## About The Project
+
+The app consists of several elements:
+
+- [ ] Todolist - simple and obvious todo-list.
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/208b0e15-9659-498e-97de-0fbb6f4720b6)
+
+- [ ] Products table - displaying info about products,
+
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/d581886d-4f1d-4c35-80b5-9d3726ac74cc)
+
+
+- [ ] Product cards - every product in data is presented as card,
+
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/24759d91-7daa-4c23-bfae-cd9510434361)
+
+
+- [ ] Modal - to edit product data,
+
+![image](https://github.com/PioterAndrzejewski/muscode_app/assets/109315248/7d61784d-3b60-4ea4-aa9e-885799c29de7)
+
+ ## To-do
+The application was a pre-recruitment task and there are no plans of future development. 
+    
+## Sources
+The task is a recruitment task for the Muscode company and was performed in accordance with the specification provided by Muscode. 
