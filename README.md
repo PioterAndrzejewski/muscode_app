@@ -6,9 +6,8 @@
 
 
 <br />
-<div align="center">Check demo:
-  <a href="[https://github.com/PioterAndrzejewski/products_getter/](https://pioterandrzejewski.github.io/muscode_app/)">
-  </a>
+<div align="center">
+  <a href="https://pioterandrzejewski.github.io/muscode_app/">CHECK LIVE DEMO</a>
 
 <h3 align="center">Muscode app</h3>
 
