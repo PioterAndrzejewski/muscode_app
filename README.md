@@ -12,7 +12,7 @@
 <h3 align="center">Muscode app</h3>
 
   <p align="center">
-   A single page application created in Vue.js.
+   A single page application created in Vue.js. It is a recruitment task for the Muscode company and was performed in accordance with the specification provided by Muscode.
     <br />
     <br />
   </p>
